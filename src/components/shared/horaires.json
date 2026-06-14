@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_shared_horaires",
+  "info": {
+    "displayName": "Horaires",
+    "icon": "clock"
+  },
+  "options": {},
+  "attributes": {
+    "Lundi": {
+      "type": "string"
+    },
+    "Mardi": {
+      "type": "string"
+    },
+    "Mercredi": {
+      "type": "string"
+    },
+    "Jeudi": {
+      "type": "string"
+    },
+    "Vendredi": {
+      "type": "string"
+    },
+    "Samedi": {
+      "type": "string"
+    },
+    "Dimanche": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

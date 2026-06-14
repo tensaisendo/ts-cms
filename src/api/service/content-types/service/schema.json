@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "services",
+  "info": {
+    "singularName": "service",
+    "pluralName": "services",
+    "displayName": "Service"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titre": {
+      "type": "string"
+    },
+    "Prix": {
+      "type": "integer"
+    },
+    "Temps": {
+      "type": "string"
+    },
+    "salon": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::salon.salon",
+      "inversedBy": "services"
+    }
+  }
+}

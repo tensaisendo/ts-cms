@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "salons",
+  "info": {
+    "singularName": "salon",
+    "pluralName": "salons",
+    "displayName": "Salon"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nom": {
+      "type": "string"
+    },
+    "Ville": {
+      "type": "string"
+    },
+    "Adresse": {
+      "type": "string"
+    },
+    "Telephone": {
+      "type": "string"
+    },
+    "Site": {
+      "type": "string",
+      "regex": "^https?:\\/\\/.*"
+    },
+    "Horaires": {
+      "type": "component",
+      "component": "shared.horaires",
+      "repeatable": false
+    },
+    "services": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::service.service",
+      "mappedBy": "salon"
+    },
+    "Photos": {
+      "type": "json"
+    }
+  }
+}
