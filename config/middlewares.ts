@@ -12,9 +12,11 @@ const config: Core.Config.Middlewares = [
         "http://127.0.0.1:5500",
         "http://localhost:3000",
         "https://tscms.onrender.com",
-        "https://*.vercel.app"
+        "https://*.vercel.app",
+        "https://ts-frontend-coral.vercel.app"
       ],
       headers: '*',
+      methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
     },
   },
   'strapi::poweredBy',
